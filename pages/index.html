@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <span class="header_logo">Web Topics</span>
+        <nav class="header_actions">
+          <button type="button">
+            <ion-icon
+              name="moon-outline"
+              class="header_actions--icon"
+            ></ion-icon>
+            <span>Dark Mode</span>
+          </button>
+
+          <a href="/favorite.html">
+            <ion-icon
+              name="heart-outline"
+              class="header_actions--icon"
+            ></ion-icon>
+            <span>Favourites</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero__rshape"></div>
+      <div class="hero__lshape"></div>
+      <div class="hero__content">
+        <div class="hero__content--info">
+          <h2>Welcome to our website!</h2>
+          <p>We have a new design that's fresh, modern and easy to use.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <main class="courses">
+      <div class="container">
+        <form class="courses__filter">
+          <div class="courses__filter--search">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Search the website..." />
+          </div>
+          <section>
+            <div class="courses__filter--control">
+              <label for="sort">Sort by:</label>
+              <select id="sort">
+                <option value="default">Default</option>
+              </select>
+            </div>
+            <div class="courses__filter--control">
+              <label for="filter">Filter by:</label>
+              <select id="filter">
+                <option value="default">Default</option>
+              </select>
+            </div>
+          </section>
+        </form>
+
+        <h2 class="courses__header">"24" Web Topics Found</h2>
+
+        <div class="courses__result">
+          <div class="courses__result--card">
+            <img src="../assets/html.png" alt="html" />
+            <div class="courses__result--card--info">
+              <p>Web Development Languages</p>
+              <h5>HTML</h5>
+              <div class="courses__result--card--info--rating">
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star-half-outline" class="star"></ion-icon>
+                <ion-icon name="star-outline" class="star"></ion-icon>
+              </div>
+
+              <span>Author: Sarah Smith</span>
+            </div>
+          </div>
+
+          <div class="courses__result--card">
+            <img src="../assets/css.webp" alt="css" />
+            <div class="courses__result--card--info">
+              <p>Web Development Languages</p>
+              <h5>CSS</h5>
+              <div class="courses__result--card--info--rating">
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star-half-outline" class="star"></ion-icon>
+                <ion-icon name="star-outline" class="star"></ion-icon>
+              </div>
+
+              <span>Author: David Lee</span>
+            </div>
+          </div>
+
+          <div class="courses__result--card">
+            <img src="../assets/javascript.jpg" alt="js" />
+            <div class="courses__result--card--info">
+              <p>Web Development Languages</p>
+              <h5>JavaScript</h5>
+              <div class="courses__result--card--info--rating">
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star-half-outline" class="star"></ion-icon>
+                <ion-icon name="star-outline" class="star"></ion-icon>
+              </div>
+
+              <span>Author: Emily Chen</span>
+            </div>
+          </div>
+
+          <div class="courses__result--card">
+            <img src="../assets/jquery.png" alt="jquery" />
+            <div class="courses__result--card--info">
+              <p>Web Development Languages</p>
+              <h5>jQuery</h5>
+              <div class="courses__result--card--info--rating">
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star-half-outline" class="star"></ion-icon>
+                <ion-icon name="star-outline" class="star"></ion-icon>
+              </div>
+
+              <span>Author: David Lee</span>
+            </div>
+          </div>
+
+          <div class="courses__result--card">
+            <img src="../assets/angular.png" alt="angular" />
+            <div class="courses__result--card--info">
+              <p>Web Development Languages</p>
+              <h5>Angular</h5>
+              <div class="courses__result--card--info--rating">
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star-half-outline" class="star"></ion-icon>
+                <ion-icon name="star-outline" class="star"></ion-icon>
+              </div>
+
+              <span>Author: David Lee</span>
+            </div>
+          </div>
+
+          <div class="courses__result--card">
+            <img src="../assets/docker.png" alt="docker" />
+            <div class="courses__result--card--info">
+              <p>Web Development Languages</p>
+              <h5>Docker</h5>
+              <div class="courses__result--card--info--rating">
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star" class="star"></ion-icon>
+                <ion-icon name="star-half-outline" class="star"></ion-icon>
+                <ion-icon name="star-outline" class="star"></ion-icon>
+              </div>
+
+              <span>Author: David Lee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      Developed with &VeryThinSpace;
+      <ion-icon name="heart" class="footer__icon"></ion-icon> &VeryThinSpace;
+      &copy; 2023
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
