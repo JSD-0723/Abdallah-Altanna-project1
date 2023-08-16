@@ -113,11 +113,6 @@ select:focus {
 }
 
 @media (min-width: 576px) {
-  /* .header .header_actions > button,
-  .header .header_actions > a {
-    width: 120px;
-  } */
-
   .header .header_actions > button span,
   .header .header_actions > a span {
     display: inline;
@@ -170,19 +165,17 @@ select:focus {
 }
 
 .hero .hero__rshape {
-  background-color: var(--brand-secondary);
-  transform: skewY(4deg);
-  transform-origin: top right;
+  clip-path: polygon(15% 0, 100% 100%, 100% 0);
+  background: var(--brand-secondary);
 }
 
 .hero .hero__lshape {
+  clip-path: polygon(0 0, 0 100%, 85% 0%);
   background: linear-gradient(
     to right,
     var(--brand-primary),
     var(--brand-secondary)
   );
-  transform: skewY(-4deg);
-  transform-origin: top left;
 }
 
 .hero .hero__content {
@@ -200,7 +193,7 @@ select:focus {
 
 .hero .hero__content .hero__content--info h2 {
   color: var(--brand-secondary);
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
 .hero .hero__content .hero__content--info p {
