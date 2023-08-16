@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: 0.3s background-color ease-in-out;
 }
 
 body {
@@ -102,6 +103,7 @@ select:focus {
   column-gap: 5px;
   font-size: 15px;
   cursor: pointer;
+  color: var(--body-text);
 }
 
 .header .header_actions > button span,
@@ -127,6 +129,7 @@ select:focus {
   justify-content: center;
   align-items: center;
   padding: 30px 0;
+  color: var(--body-text);
 }
 
 .footer .footer__icon {

@@ -13,7 +13,7 @@ main {
   flex-direction: column;
   background-color: var(--bg_default);
   border-radius: 8px;
-  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  box-shadow: 2px 2px 6px #0000001a, -2px -2px 6px #0000001a;
   min-height: 50px;
 }
 
@@ -26,9 +26,18 @@ main {
   border-bottom: 1px solid var(--lines-color);
 }
 
+.courses
+  .courses__filter
+  .courses__filter--search
+  .courses__filter--search--icon {
+  color: var(--body-text);
+}
+
 .courses .courses__filter .courses__filter--search input {
   width: 100%;
   padding: 4px;
+  background-color: var(--bg_default);
+  color: var(--body-text);
 }
 
 .courses .courses__filter section {
@@ -47,13 +56,16 @@ main {
 
 .courses .courses__filter .courses__filter--control label {
   font-size: 12px;
+  color: var(--body-text);
 }
 
 .courses .courses__filter .courses__filter--control select {
-  margin-left: -3px;
+  margin-left: -4px;
   display: block;
   width: 100%;
   font-size: 15px;
+  background-color: var(--bg_default);
+  color: var(--body-text);
 }
 
 @media (min-width: 992px) {
@@ -77,6 +89,7 @@ main {
 
 .courses .courses__header {
   margin: 30px 0 50px;
+  color: var(--body-text);
 }
 
 .courses .courses__result {
@@ -112,6 +125,9 @@ main {
 .courses__result--card {
   background-color: var(--bg_default);
   border-radius: 6px;
+  box-shadow: 2px 2px 6px #0000001a, -2px -2px 6px #0000001a;
+  height: 300px;
+  overflow: hidden;
 }
 
 .courses__result--card img {
@@ -120,27 +136,46 @@ main {
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
   object-fit: cover;
+  display: block;
 }
 
 .courses__result--card .courses__result--card--info {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 140px);
 }
 
 .courses__result--card .courses__result--card--info p {
   font-size: 14px;
   margin-bottom: 4px;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--body-text);
+}
+
+.courses__result--card .courses__result--card--info h3 {
+  font-size: 15px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--body-text);
 }
 
 .courses__result--card .courses__result--card--info span {
   font-size: 14px;
-  color: #666;
+  color: var(--body-text);
+  opacity: 0.5;
 }
 
 .courses__result--card--info--rating {
   display: flex;
-  margin: 30px 0 20px;
 }
 
 .courses__result--card--info--rating .star {
-  color: #e39916;
+  color: var(--color-star);
 }
