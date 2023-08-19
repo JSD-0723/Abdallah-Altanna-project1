@@ -176,6 +176,6 @@ main {
   display: flex;
 }
 
-.courses__result--card--info--rating .star {
+.star {
   color: var(--color-star);
 }
