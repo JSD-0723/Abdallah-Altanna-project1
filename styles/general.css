@@ -114,6 +114,11 @@ ul {
 
 .header .header_actions > button span {
   display: none;
+  pointer-events: none;
+}
+
+.header .header_actions > button .header_actions--icon {
+  pointer-events: none;
 }
 
 @media (min-width: 576px) {

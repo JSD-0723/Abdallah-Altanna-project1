@@ -87,3 +87,10 @@ favBtn.addEventListener('click', () => {
   favPopup.classList.toggle('visible');
   favBtnContent();
 });
+
+document.addEventListener('click', event => {
+  if (!favPopup.classList.contains(event.target) && event.target !== favBtn) {
+    favPopup.classList.remove('visible');
+    favBtnContent();
+  }
+});
