@@ -24,6 +24,7 @@
   --heart-color: #dc143c;
   --main-font: 'Nunito Sans';
   --color-star: #e39916;
+  --details-text: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,7 +38,7 @@
     --heart-color: #dc143c;
     --main-font: 'Nunito Sans';
     --color-star: #e39916;
-    --details-text: #333;
+    --details-text: #fff;
   }
 }
 
@@ -52,5 +53,6 @@
     --heart-color: #dc143c;
     --main-font: 'Nunito Sans';
     --color-star: #e39916;
+    --details-text: #fff;
   }
 }
