@@ -13,7 +13,7 @@ main {
   flex-direction: column;
   background-color: var(--bg_default);
   border-radius: 8px;
-  box-shadow: 2px 2px 6px #0000001a, -2px -2px 6px #0000001a;
+  box-shadow: var(--shadow);
   min-height: 50px;
 }
 
@@ -57,10 +57,10 @@ main {
 .courses .courses__filter .courses__filter--control label {
   font-size: 12px;
   color: var(--body-text);
+  margin-inline-start: 12px;
 }
 
 .courses .courses__filter .courses__filter--control select {
-  margin-left: -4px;
   display: block;
   width: 100%;
   font-size: 15px;
@@ -125,7 +125,7 @@ main {
 .courses__result--card {
   background-color: var(--bg_default);
   border-radius: 6px;
-  box-shadow: 2px 2px 6px #0000001a, -2px -2px 6px #0000001a;
+  box-shadow: var(--shadow);
   height: 300px;
   overflow: hidden;
 }
@@ -147,7 +147,7 @@ main {
   height: calc(100% - 140px);
 }
 
-.courses__result--card .courses__result--card--info p {
+.courses__result--card .courses__result--card--info a {
   font-size: 14px;
   margin-bottom: 4px;
   -webkit-line-clamp: 1;
@@ -174,8 +174,4 @@ main {
 
 .courses__result--card--info--rating {
   display: flex;
-}
-
-.star {
-  color: var(--color-star);
 }
